@@ -1,8 +1,15 @@
+import { BaseDataSourceOptions } from "../../data-source/BaseDataSourceOptions"
+
 /**
  * @interface SurrealConnectionOptions
  * @see https://github.com/necm1/surrealdb-driver/blob/main/src/interface/client-options.interface.ts
  */
-export interface SurrealConnectionOptions {
+export interface SurrealConnectionOptions extends BaseDataSourceOptions {
+    /**
+     * Database type.
+     */
+    readonly type: "surrealdb"
+
   /**
    * Database RPC host url
    *
