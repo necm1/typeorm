@@ -135,5 +135,18 @@
       "maxRetries": 3
     },
     "logging": false
+  },
+  {
+    "skip": false,
+    "name": "surrealdb",
+    "type": "surrealdb",
+    "host": "127.0.0.1",
+    "port": 8000,
+    "user": "root",
+    "pass": "root",
+    "db": "myDb",
+    "ns": "myNamespace",
+    "ssl": false,
+    "logging": false
   }
 ]
